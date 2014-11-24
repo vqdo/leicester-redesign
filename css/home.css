@@ -1,0 +1,199 @@
+body {
+    background: url('../img/cartographer.png') #333;
+    background-attachment: fixed;
+}
+/* Background types */
+.slideshow-bg {
+    border-bottom: 5px solid #000;
+    height: 520px;
+    width: 100%;
+    z-index: -2;
+}
+.slideshow-bg.study-with-us{
+    background: url('../img/coverpic-campus.jpg');
+    background-size: cover;      
+}
+.slideshow-bg.research-with-us{
+    background: url('../img/banner-sprite.jpg');
+    background-position: 50% 0;
+}
+.slideshow-bg.business-and-enterprise {
+    background: url('../img/banner-sprite.jpg');
+    background-position: 50% 1300px;
+}
+.slideshow-bg.alumni {
+    background: url('../img/banner-sprite.jpg');
+    background-position: 50% 600px;
+}
+.slideshow-panel {
+    width: 100%;
+    height: 520px;
+}
+.slideshow-panel h2 {
+    float: left;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    max-width: 500px;
+    padding: 0 0 15px 0;
+    
+}
+.slideshow-panel h3 {
+    font: normal 14pt "Open Sans Condensed", Arial, sans-serif;
+    text-transform: uppercase;
+    float: left;
+    margin: 15px 15px;
+}
+.panel-title {
+    position: absolute;
+}
+
+/* Study with us panel */
+.study-with-us .panel-title {
+    bottom: 160px;
+}
+.study-with-us h2 {
+    border-right: 1px solid #FFF;
+    color: #FFF;
+    font: bold 36pt "Open Sans Condensed", Arial, sans-serif;
+    z-index: 2;
+    line-height: 48px;
+}
+.study-with-us h3 {
+    background: #C04F00;
+    color: #FFF;    
+    font: 16px Calibri, sans-serif;
+    display: inline-block;
+    padding: 0 5px;
+    letter-spacing: 1px;
+}
+
+
+/***
+ * MASTER.CSS Overrides
+ */
+ 
+ .logo {
+     background-position: 0 0;
+ }
+
+/* Override navigation bar style to be transparent */
+.main-nav {
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+}
+.main-nav-titles {
+    background: rgba(0, 0, 0, 0.3);    
+    background-clip: padding-box;
+    border-top: 5px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+.main-nav-titles a {
+    color: #FFF;
+}
+.main-nav.expanded .main-nav-titles {
+   margin: 0;
+}
+
+h2 strong {
+   
+}
+ 
+/* Override footer to cast shadow */ 
+footer {
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/**************************************************
+ *** Content
+ *************************************************/
+
+.content {
+    z-index: 1;
+}
+.content .container {
+    background: #EFEFEF;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    border-top: 10px solid #C04F00;
+    margin-top: -40px;
+    width: 100%;
+} 
+ .content h2 {
+     color: #C04F00;
+     font: bold 13px "Open Sans", Arial, sans-serif;
+     text-transform: uppercase;
+     padding: 0 0 20px 0;
+ }
+ .content section {
+     position: relative;
+ }
+ .content-sidebar {
+    float: left;
+    padding: 20px;
+    width: 320px;
+ }
+ .content-main {
+    float: right;
+    padding: 20px 20px 20px 0;
+ }
+ .see-more {
+     background: #E1A200;
+     font: normal 11px "Open Sans";
+     padding: 2px 5px;
+     position: absolute;
+         top: 0;
+         right: 0;
+    text-transform: uppercase;
+ }
+ .see-more a {
+     color: #FFF;     
+ }
+
+ .featured-news {
+     border-bottom: 1px solid #999;     
+     padding: 0 0 20px 0;
+     margin: 0 0 20px 0;
+ }
+  .featured-news h1 {
+     float: right;
+     font: normal 24px "Open Sans", Arial, sans-serif;
+     width: 250px;
+ }
+ .news-blurb-large {
+    display: inline-block;
+    float: left;
+    width: 370px;
+    height: 240px;
+    overflow: hidden;
+    margin: 0 20px 0 0;
+ }
+ .news-blurb {
+     float: left;
+     width: 150px;
+     height: 150px;
+     margin: 0 12px 0 0;
+     overflow: hidden;
+     position: relative;
+ }
+ .news-blurb:last-child {
+     margin: 0;
+ }
+ .news-blurb h1 {
+     background: #E1A200;
+     opacity: 0.8;
+     color: #000;
+     font: normal 11px "Open Sans", Arial, sans-serif;
+     min-height: 40px;
+     padding: 5px;
+     position: absolute;
+         left: 0;
+         bottom: 0;
+ }
+ .news-blurb:hover h1 {
+     opacity: 1;
+ }
+ .news-blurb img {
+     width: 150px;
+ }
+ .news-image-large {
+     width: 370px;
+     margin-top: -25%;
+ }
