@@ -40,6 +40,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	font: 14px "Open Sans", Arial, sans-serif;
+	
 }
 ol, ul {
 	list-style: none;
@@ -78,7 +79,8 @@ a:hover {
  * Structural / Block
  */
 body {
-    background: #fff;
+    background: #0061A9;
+    color: #FFF;
 }
 header {
     margin: 0 0 60px 0;
@@ -87,6 +89,7 @@ header {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
+
 }
 .logo-wrapper {
     padding: 20px 0;
@@ -255,8 +258,8 @@ header {
  * Footer
  *************************/
  footer {
-     background: #0061A9;
-     border-top: 15px solid #005391;
+     background: #C04F00;
+     border-top: 15px solid #e1a200;
      color: #FFF;
      padding: 20px 0 40px 0;
  }
@@ -267,7 +270,7 @@ header {
      text-decoration: underline;
  }
  footer address {
-     border-left: 10px solid  #005391;
+     border-left: 10px solid  #e1a200;
      font-size: 14px;
      line-height: 1.2;
      color: #EEE;
@@ -279,7 +282,7 @@ header {
      text-decoration: none;
  }
  footer section {
-     color: #FFF;
+     color: #C04F00;
      font: 14px "Open Sans", Arial, sans-serif;
      float: left;
      line-height: 2;
@@ -329,7 +332,7 @@ header {
 
 /* Page Navigation */
 .page-root-link a {
-    color: #C04F00;
+    color: #FFF;
     font-weight: bold;
 }
 .page-navigation {
@@ -372,16 +375,17 @@ header {
 }
 .page-body h3 {
     font: bold 18px "Open Sans", Arial, sans-serif;
+    
 }
 .page-body h2 a, .page-body h2 {
     color: #C04F00;
 }
 .page-body h3 a, .page-body h3 {
-    color: #666;
+    color: #fFF;
 }
 .page-body .intro {
     padding-top: 10px;
-    color: #666;
+    color: #FFF;
     font-size: 16px;
 }
 
