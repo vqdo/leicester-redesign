@@ -97,6 +97,12 @@ header {
     width: 276px;
     height: 68px;
 }
+.logo.black {
+    background-position: 0 205px;
+}
+.logo.white {
+    background-position: 0 0;
+}
 .logo span {
     opacity: 0;
 }
@@ -246,7 +252,6 @@ header {
     /*color: #FFF;*/
     text-transform: uppercase;
     font-size:11px;
-    font-weight:bold;
     padding-right: 10px;
     
     
@@ -424,6 +429,10 @@ a.box-link {
 
 #students h1{
   background: url('../img/students2.jpg');
+  background-size: cover;
+}
+#ugstudents h1{
+  background: url('../img/students1.jpg');
   background-size: cover;
 }
 #pgstudents h1{

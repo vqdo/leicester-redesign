@@ -1,144 +1,15 @@
-/************************************************************
- * Master css file for the University of Leicester redesign. 
- * COGS 187A - Fall 2014
- * Victoria Do, Nancy Acosta, Tanya Zhang
- ************************************************************/
-
-/**
- * CSS reset 
- */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-	font: 14px "Open Sans", Arial, sans-serif;
-	
-}
-ol, ul {
-	list-style: none;
-}
-strong {
-    font-weight: bold;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*********************** END RESET *************************/
-
-/**
- * Inline / Text
- */ 
-
-a {
-    color:  #0061A9;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
 
 /**
  * Structural / Block
  */
 body {
-    background: #0061A9;
-    color: #FFF;
-}
-header {
-    margin: 0 0 60px 0;
-}
-.container {
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-
-}
-.logo-wrapper {
-    padding: 20px 0;
-}
-.logo {
-    background: url('../img/logo-sprite.png');
-    background-position: 0 205px;
-    width: 276px;
-    height: 68px;
-}
-.logo span {
-    opacity: 0;
+    background: #00467a;
+    color: #EEE;
 }
 
-/**
- * Main Navigation
- */
- .searchbox {
-     border: 1px solid #666;
-     color: #666;
-     padding: 2px 5px;
-     width: 140px;
-     height: 20px;
-     font: normal 12px Arial, sans-serif;
-     margin-top: 5px;
-     text-align: right;
- }
- /*.searchbox-submit {*/
- /*    background: transparent;*/
- /*    color: #f6a04d;*/
- /*    border: 0;*/
- /*    font: bold 14px Arial, sans-serif;*/
- /*    line-height: 30px;*/
- /*}*/
- 
-.main-nav li, .user-type-nav li {
-     display: inline-block;
-
- }
-.main-nav {
-    width: 100%;
-    z-index: 10;
-    position: absolute;
-}
 .main-nav-titles {
-    background: #FFF /* #0061A9*/;        
-    background-clip: padding-box;
-    border-top: 5px solid #E1A200;
-    border-bottom: 1px solid #eee;    
+    background: #0061A9 /* #0061A9*/;        
+    border-bottom: transparent;
 }
 .main-nav-titles li {
     border-right: 1px solid rgba(255, 255, 255, 0.2);
@@ -151,183 +22,66 @@ header {
     /*text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);*/
 }
 .main-nav-titles a {
-    color: #000;
+    color: #FFF;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 20px;
     line-height: 38px;
 }
-.main-nav-titles .active {
-    color:  #0061A9;
-}
-.main-nav.expanded {
-    margin: 0;
-}
-.main-nav.expanded .main-nav-titles {
-    border-top: 5px #E1A200 solid;
-    background: #FFF !important;
-   /* border-bottom: 1px solid #CCC;*/
-}
-.main-nav.expanded .main-nav-titles a {
-    color: #000 /*#f9423a*/ !important;
-    text-shadow: none;
-}
-.main-nav.expanded .main-nav-titles li {
-    border-right: 1px solid #eee;
-}
-.main-nav li:hover {
-    /* TODO: main nav hover effect */
-    text-decoration: underline;
-}
-/* adjust About column width */
-.main-nav-titles .about-title {
-    width: 85px;
-    text-align: left;
-}
 
-/** Main navigation dropdown **/
-.main-nav-dropdown {
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    color: #333;
-    display: none;
-    height: 180px;
-    width: 100%;
-    overflow: hidden;
-}
-.main-nav-dropdown .container {
-    height: 100%;
-}
-.main-nav-dropdown .dropdown {
-    height: 100%;
-    float: left;
-    width: 134px;
-    padding: 10px 10px;
-}
-.dropdown {
-    border-right: 1px dotted #DDD;
-    display: block;
-    height: 100%;
-}
-.dropdown:last-child, .main-nav-titles li:last-child {
-    border: none !important;
-    
-}
-.main-nav-dropdown li {
-    display: block;
-    padding: 4px 0;    
-}
-.main-nav-dropdown .about-links {
-    width: 80px;
-    padding: 10px 5px;    
-}
-.main-nav-dropdown a {
-    display: block;
-    font: normal 12px Arial, sans-serif;
-    width: 100%;
+header {
+    padding: 15px 0 0 0;
 }
 
 /*************************
  * User type navigation
  *************************/
 .user-type-nav {
-    position: absolute;   
-        top: 0;
-    width: 100%;
-    box-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
-}
-.user-type-nav li {
-    float: right;
-    padding-right: 10px;
-}
-.user-type-nav li:first-child {
-    padding-right: 0;
-}
-.user-type-nav li:hover {
-    text-decoration: overline, underline;
+    background: #e1a200;
 }
 .user-type-nav a {
-    /*color: #FFF;*/
-    text-transform: uppercase;
-    font-size:11px;
-    font-weight:bold;
-    padding-right: 10px;
-    
-    
+    color: #FFF;
 }
+
 /*************************
  * Footer
  *************************/
  footer {
      background: #C04F00;
      border-top: 15px solid #e1a200;
-     color: #FFF;
      padding: 20px 0 40px 0;
  }
- footer a {
-     color: #FFF;
- }
- footer a:hover {
-     text-decoration: underline;
- }
+
  footer address {
      border-left: 10px solid  #e1a200;
-     font-size: 14px;
-     line-height: 1.2;
-     color: #EEE;
-     padding: 5px 0 10px 20px;
-     /*margin: 0 10px 20px 10px;*/
  }
 
- footer .address:hover {
-     text-decoration: none;
- }
- footer section {
-     color: #C04F00;
-     font: 14px "Open Sans", Arial, sans-serif;
-     float: left;
-     line-height: 2;
-     margin: 0 40px 0 0;
-     width: 200px;
- }
- footer section.large {
-     width: 250px;
- }
- footer h2 {
-     /*border-bottom: 1px solid #004578;     */
-     color: #FFF;
-     font: 18px "Open Sans Condensed", Arial, sans-serif;
-     padding: 5px 0;
-     margin: 10px 0;
-     text-transform: uppercase;
- }
- 
-/**
-* Info page styles */
-.breadcrumbs {
-  /*margin: 10px 0;*/
-}
-.page-content {
-    padding: 0 0 20px 0;
-}
 .page-content h1 {
   color: #FFF;
-  font: normal 48px Lora, Georgia, sans-serif;
+  font: normal 48px Georgia, sans-serif;
   width: 100%;
-  height: 140px;
+  height: 250px;
   margin: 10px 0;
   position: relative;
 }
 .page-title {
-  background: #0061A9;      
+  background: #e1a200;      
   padding: 0 20px;  
   position: absolute;
       bottom: 0;
+}
+.breadcrumbs {
+    padding: 0 0 10px 0;
+    text-align: right;
+    width: 100%;
+}
+.breadcrumbs a {
+    color: #FFF;
 }
 /***********************************
  * Side pages 
  ***********************************/
 .page-content p {
-    padding: 0 0 10px 0;
+    padding: 0 0 0 0;
 }
 
 /* Page Navigation */
@@ -340,135 +94,68 @@ header {
   width: 240px;
   padding-right: 20px;
 }
-.page-navigation ul {
-    padding: 0 0 0 20px;
-}
-.page-navigation ul:first-child {
-    padding: 0;
-}
 .page-navigation li a {
-    display: block;
-    padding: 10px 0;
-    border-bottom: 1px solid #EEE;
+    color: #FFF;
+    border-bottom: 1px solid #003258;
 }
 .page-navigation li a:hover {
-    color: #C04F00;
-}
-.page-navigation a.active {
-    font-weight: bold;
-}
-
-.page-navigation a:hover, p a:hover {
-    text-decoration: underline;    
+    color: #e1a200;
 }
 /** Page body styles **/
 
 .page-body {
-  float: left;
-  width: 530px;
-}
-.page-body h2, .page-body h3 {
-    padding: 10px 0;    
-}
-.page-body h2 {
-    font: bold 24px "Open Sans", Arial, sans-serif;
-}
-.page-body h3 {
-    font: bold 18px "Open Sans", Arial, sans-serif;
-    
+  background: #FFF;
+  color: #333;
+  padding: 20px;
+  width: 722px;
 }
 .page-body h2 a, .page-body h2 {
-    color: #C04F00;
+    color: #e1a200;
 }
 .page-body h3 a, .page-body h3 {
-    color: #fFF;
+    color: #333;
 }
 .page-body .intro {
-    padding-top: 10px;
-    color: #FFF;
-    font-size: 16px;
+    color: #000;
 }
 
 /**
  * Right sidebar information */
 
-.page-sideinfo {
-  float: right;
-  width: 220px;
-}
-.page-sideinfo .module h2 {
-    color: #C04F00;
-    font-weight: bold;   
-    padding: 10px 0;
-}
-
-a.box-link {
-     border: 1px solid #0061A9;
-     color: #0061A9;
-     font: normal 16px "Open Sans", Arial, sans-serif;
-     display: inline-block;
-     padding: 15px;
-     margin: 10px;
-}
-.box-link:hover {
-    background: #0061A9;
-    color: #FFF;
-    text-decoration: none ;
-}
-#tuition-and-aid h1, #tuition-and-aid-international h1 {
-  background: url('../img/studentmag_finance.jpg');
-  background-size: cover;
-}
-#tuition-and-aid-international td {
-    padding: 10px;
-}
-#tuition-and-aid-international td:first-child {
-    width: 150px;
-}
-
 #students h1{
   background: url('../img/students2.jpg');
   background-size: cover;
-}
-#pgstudents h1{
-  background: url('../img/pgstudents.jpg');
-  background-size: cover;
+  background-position: 70% 0;
 }
 
 
-
-/** 
- * Utility
- */
-.fr {
-    float: right;
+/** box things **/
+.box-nav-link {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    color: #FFF;
+    margin: 0 5px;
+    float: left;    
+    font: bold 18px "Open Sans", Arial, sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 20px;
 }
-.fl {
-    float: left;
+.box-nav-link.yellow {
+    background: #e1a200;
 }
-/**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.box-nav-link.orange {
+    background: #C04F00;
+    margin-top: 20px;
 }
-
-.cf:after {
-    clear: both;
+.box-nav-link.yellow:hover {
+    color: #e1a200;
 }
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-    *zoom: 1;
+.box-nav-link.orange:hover {
+    color: #C04F00;
+}
+.box-nav-link:hover {
+    background: #FFF;
 }
